@@ -6,10 +6,11 @@ int NumberOfDigits(long);
 long RecIntMult(long a, long b, int n);
 
 int main(void) {
-  long x, y, product;
+  long x, y, product=1;
   printf("Enter X and Y : ");
-  scanf("%ld %ld", &x, &y);
+  if(scanf("%ld %ld", &x, &y)){}
   product=RecIntMult(x, y, NumberOfDigits(x));
+  printf("%ld %ld\n", x, y);
   printf("Product = %ld\n", product);
 }
 
